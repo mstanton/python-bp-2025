@@ -87,7 +87,7 @@ This project uses:
 
 ## License
 
-[Add your license information here]
+[meh]
 
 ## Author
 
