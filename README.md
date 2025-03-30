@@ -28,9 +28,9 @@ source .venv/bin/activate  # On Unix/macOS
 .venv\Scripts\activate  # On Windows
 ```
 
-4. Install dependencies:
+4. Install the package in development mode:
 ```bash
-uv pip install -r requirements.txt
+uv pip install -e .
 ```
 
 ## Development
@@ -41,9 +41,15 @@ uv pip install -r requirements.txt
 python-bp-2025/
 ├── .venv/              # Virtual environment (gitignored)
 ├── src/               # Source code
+│   └── python_bp_2025/
+│       ├── __init__.py
+│       └── hello.py
 ├── tests/             # Test files
+│   ├── __init__.py
+│   └── test_hello.py
 ├── .gitignore         # Git ignore rules
 ├── pyproject.toml     # Project metadata and build configuration
+├── setup.py          # Package installation configuration
 ├── requirements.txt   # Project dependencies
 └── README.md         # This file
 ```
@@ -52,7 +58,14 @@ python-bp-2025/
 
 To run the main application:
 ```bash
-python hello.py
+python -m python_bp_2025.hello
+```
+
+### Running Tests
+
+To run the test suite:
+```bash
+python -m unittest discover tests
 ```
 
 ### Development Tools
@@ -66,7 +79,10 @@ This project uses:
 
 1. Create a new branch for your feature
 2. Make your changes
-3. Run tests (when implemented)
+3. Run tests:
+   ```bash
+   python -m unittest discover tests
+   ```
 4. Submit a pull request
 
 ## License
