@@ -91,4 +91,4 @@ This project uses:
 
 ## Author
 
-[Your Name] - [your.email@example.com]
+[Matthew Stanton] - [mrstanton81@gmail.com]
