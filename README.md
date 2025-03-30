@@ -1,0 +1,78 @@
+# Python BP 2025
+
+A Python project using `uv` for fast and reliable dependency management.
+
+## Prerequisites
+
+- Python 3.8 or higher
+- `uv` package installer (recommended for development)
+
+## Installation
+
+1. Install `uv` globally (if you haven't already):
+```bash
+pip install uv
+```
+
+2. Clone the repository:
+```bash
+git clone https://github.com/yourusername/python-bp-2025.git
+cd python-bp-2025
+```
+
+3. Create and activate a virtual environment:
+```bash
+uv venv
+source .venv/bin/activate  # On Unix/macOS
+# or
+.venv\Scripts\activate  # On Windows
+```
+
+4. Install dependencies:
+```bash
+uv pip install -r requirements.txt
+```
+
+## Development
+
+### Project Structure
+
+```
+python-bp-2025/
+├── .venv/              # Virtual environment (gitignored)
+├── src/               # Source code
+├── tests/             # Test files
+├── .gitignore         # Git ignore rules
+├── pyproject.toml     # Project metadata and build configuration
+├── requirements.txt   # Project dependencies
+└── README.md         # This file
+```
+
+### Running the Project
+
+To run the main application:
+```bash
+python hello.py
+```
+
+### Development Tools
+
+This project uses:
+- `uv` for fast package management
+- `ruff` for linting (configured in pyproject.toml)
+- `hatchling` as the build backend
+
+## Contributing
+
+1. Create a new branch for your feature
+2. Make your changes
+3. Run tests (when implemented)
+4. Submit a pull request
+
+## License
+
+[Add your license information here]
+
+## Author
+
+[Your Name] - [your.email@example.com]

@@ -1,0 +1,7 @@
+# Core dependencies
+# Add your project dependencies below
+# Format: package_name==version
+
+# Development dependencies
+uv==0.1.24  # Fast Python package installer and resolver
+# Add development tools and testing frameworks below 
