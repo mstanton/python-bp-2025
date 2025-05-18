@@ -1,11 +1,12 @@
 # Python BP 2025
 
-A Python project using `uv` for fast and reliable dependency management.
+A Python project using `uv` for fast and reliable dependency management, optimized for development in Cursor IDE.
 
 ## Prerequisites
 
 - Python 3.8 or higher
 - `uv` package installer (recommended for development)
+- Cursor IDE (recommended for development)
 
 ## Installation
 
@@ -39,7 +40,8 @@ uv pip install -e .
 
 ```
 python-bp-2025/
-├── .venv/              # Virtual environment (gitignored)
+├── .cursor/           # Cursor IDE configuration
+├── .venv/             # Virtual environment (gitignored)
 ├── src/               # Source code
 │   └── python_bp_2025/
 │       ├── __init__.py
@@ -74,6 +76,16 @@ This project uses:
 - `uv` for fast package management
 - `ruff` for linting (configured in pyproject.toml)
 - `hatchling` as the build backend
+- Cursor IDE for enhanced development experience
+
+### Cursor IDE Features
+
+This project is optimized for development in Cursor IDE, which provides:
+- AI-powered code completion and suggestions
+- Intelligent code navigation
+- Built-in terminal and Git integration
+- Real-time error detection
+- Seamless debugging experience
 
 ## Contributing
 
